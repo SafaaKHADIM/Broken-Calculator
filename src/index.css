@@ -10,11 +10,11 @@ body {
 
 .flexbox {
   display: flex;
-  justify-content: space-between;;
+  justify-content: space-between;
 
   width:100%;
-  max-width: 750px;
-  height: 100vh;
+  max-width: 350px;
+  height: 10vh;
 
   overflow: hidden;
 
@@ -27,15 +27,15 @@ body {
   flex-direction: column;
 
   width: 100%;
-  max-width: 300px;
+  max-width: 100px;
 
   background-color: #282c34;
 
-  padding: 15px;
+  padding: 5px;
 }
 
 .flexbox .board .card{
-  padding:15px 25px;
+  padding:0px 2px;
   background-color: brown;
 
   cursor: pointer;
