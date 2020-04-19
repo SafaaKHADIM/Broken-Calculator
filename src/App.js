@@ -3,10 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 import Board from "./components/Board";
 import Card from "./components/Card";
+import Display from "./components/Display";
 
 function App() {
   return (
       <div className="App">
+          <br/><br/><br/>
+          <Display className="box"></Display>
+          <br/>
         <main className="flexbox">
           <Board id="board-1" className="board">
             <Card id="card-1" className="card" draggable="true" idblock="board-1">

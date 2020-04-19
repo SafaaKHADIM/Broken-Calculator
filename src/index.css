@@ -8,6 +8,14 @@ body {
   background-color: bisque;
 }
 
+.Display.box {
+
+  width:50px;
+  max-width: 350px;
+  height: 10vh;
+
+}
+
 .flexbox {
   display: flex;
   justify-content: space-between;
