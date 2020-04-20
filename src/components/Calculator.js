@@ -14,7 +14,9 @@ function Calculator() {
     const onClick = (ev)=>{
         let number = "";
         const value = ev.currentTarget.getAttribute("idblock");
-        console.log( "a",ev.currentTarget.getAttribute("idblock"));
+        setsomme ( 0);
+
+
         switch(value) {
             case "board-1":
                 number =number+"5";
@@ -48,19 +50,18 @@ function Calculator() {
                 number =number;
         }
         setfirstNumber(firstNumber+number);
-        console.log("khkh",number);
-        console.log("1",Number(firstNumber));
+
 
     }
     const add =()=>{
         setsecondNumber(firstNumber);
         setfirstNumber("0");
-        console.log("2",secondNumber);
-        console.log("3",firstNumber);
     }
 
     const result = () =>{
         setsomme ( Number(firstNumber) +Number(secondNumber));
+        setfirstNumber(0);
+        setsecondNumber(0);
     }
 
 
@@ -71,17 +72,17 @@ function Calculator() {
             <br/>
             <main className="flexbox">
                 <Board id="board-1" className="board">
-                    <Card id="card-1" className="card" draggable="true" idblock="board-1" onClick1={onClick}>
+                    <Card id="card-1" className="card" draggable="true" idblock="board-1" onClick={onClick}>
                         1
                     </Card>
                 </Board>
                 <Board id="board-2" className="board">
-                    <Card id="card-2" className="card" draggable="true" idblock="board-2">
+                    <Card id="card-2" className="card" draggable="true" idblock="board-2" onClick={onClick}>
                         2
                     </Card>
                 </Board>
                 <Board id="board-3" className="board">
-                    <Card id="card-3" className="card" draggable="true" idblock="board-3">
+                    <Card id="card-3" className="card" draggable="true" idblock="board-3" onClick={onClick}>
                         3
                     </Card>
                 </Board>
@@ -89,17 +90,17 @@ function Calculator() {
             <br/>
             <main className="flexbox">
                 <Board id="board-4" className="board">
-                    <Card id="card-4" className="card" draggable="true" idblock="board-4">
+                    <Card id="card-4" className="card" draggable="true" idblock="board-4" onClick={onClick}>
                         4
                     </Card>
                 </Board>
                 <Board id="board-5" className="board">
-                    <Card id="card-5" className="card" draggable="true" idblock="board-5">
+                    <Card id="card-5" className="card" draggable="true" idblock="board-5" onClick={onClick}>
                         5
                     </Card>
                 </Board>
                 <Board id="board-6" className="board">
-                    <Card id="card-6" className="card" draggable="true" idblock="board-6">
+                    <Card id="card-6" className="card" draggable="true" idblock="board-6" onClick={onClick}>
                         6
                     </Card>
                 </Board>
@@ -107,17 +108,17 @@ function Calculator() {
             <br/>
             <main className="flexbox">
                 <Board id="board-7" className="board">
-                    <Card id="card-7" className="card" draggable="true" idblock="board-7">
+                    <Card id="card-7" className="card" draggable="true" idblock="board-7" onClick={onClick}>
                         7
                     </Card>
                 </Board>
                 <Board id="board-8" className="board">
-                    <Card id="card-8" className="card" draggable="true" idblock="board-8">
+                    <Card id="card-8" className="card" draggable="true" idblock="board-8" onClick={onClick}>
                         8
                     </Card>
                 </Board>
                 <Board id="board-9" className="board">
-                    <Card id="card-9" className="card" draggable="true" idblock="board-9">
+                    <Card id="card-9" className="card" draggable="true" idblock="board-9" onClick={onClick}>
                         9
                     </Card>
                 </Board>

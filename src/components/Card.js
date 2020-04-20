@@ -28,7 +28,7 @@ function Card (props) {
              onDragStart={dragStart}
              onDragOver={DragOver}
              idblock={props.idblock}
-             onClick={props.onClick1}
+             onClick={props.onClick}
 
         >
             {props.children}
