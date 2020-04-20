@@ -12,7 +12,7 @@ class Display extends Component {
         return (
             <div>
                 <Box width="350px" height="100px" mx="auto" borderRadius={16}  component="span" display="block" p={1} m={1} bgcolor="background.paper">
-                    block
+
                 </Box>
             </div>
         );
