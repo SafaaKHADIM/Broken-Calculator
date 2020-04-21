@@ -4,8 +4,8 @@ import Board from "./Board";
 import Card from "./Card";
 import Display from "./Display";
 import IconLabelButtons from "./button/IconLabelButtons"
-import AddIcon from '@material-ui/icons/Add';
-import DoneOutlineIcon from '@material-ui/icons/DoneOutline';
+
+
 
 function Calculator() {
     const [firstNumber, setfirstNumber] = useState(0);
@@ -48,9 +48,10 @@ function Calculator() {
             case "board-9":
                 number =number+"7";
                 break;
-
             default:
-                number =number;
+                break;
+
+
         }
         setfirstNumber(firstNumber+number);
 
@@ -68,7 +69,7 @@ function Calculator() {
         const card7= document.getElementById("board-7").childNodes[0].getAttribute("value");
         const card8= document.getElementById("board-8").childNodes[0].getAttribute("value");
         const card9= document.getElementById("board-9").childNodes[0].getAttribute("value");
-        if(card1=="5" && card2=="2" && card3=="1" && card4=="4" && card5=="3" &&card6=="8" && card7=="9" && card8=="6" && card9=="7" ){
+        if(card1==="5" && card2==="2" && card3==="1" && card4==="4" && card5==="3" &&card6==="8" && card7==="9" && card8==="6" && card9==="7" ){
             setsomme("perfect");
         }
         else{
@@ -154,7 +155,7 @@ function Calculator() {
                 </Board>
             </main>
             <main>
-            <IconLabelButtons onClick1={add} onClick2={result} onClick3={verify} startIcon={<AddIcon/>}  display="inline"></IconLabelButtons>
+            <IconLabelButtons onClick1={add} onClick2={result} onClick3={verify}   display="inline"></IconLabelButtons>
 
             </main>
         </div>

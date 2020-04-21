@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 function Board (props) {
 
@@ -10,12 +10,12 @@ function Board (props) {
         const board_id_1= ev.dataTransfer.getData("board_id");
         const board_1 = document.getElementById(board_id_1);
 
-        if(ev.currentTarget.getAttribute("class")=="board"){
+        if(ev.currentTarget.getAttribute("class")==="board"){
             console.log("a");
             ev.currentTarget.appendChild(card_1);
             card_1.setAttribute("idblock", ev.currentTarget.getAttribute("id"));
         }
-        if(ev.currentTarget.getAttribute("class")=="card"){
+        if(ev.currentTarget.getAttribute("class")==="card"){
             console.log("b");
             ev.currentTarget.parentNode.appendChild(card_1);
         }
