@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: bisque;
+  background-color: #f5f5ef;
 }
 
 .Display.box {
@@ -37,14 +37,14 @@ body {
   width: 100%;
   max-width: 100px;
 
-  background-color: #282c34;
+  background-color:  #ff99ff;
 
   padding: 5px;
 }
 
 .flexbox .board .card{
   padding:0px 2px;
-  background-color: brown;
+  background-color: #cc99ff;
 
   cursor: pointer;
   margin-bottom: 15px;
