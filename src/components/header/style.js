@@ -10,6 +10,7 @@ export const useStyles = makeStyles(theme => ({
         alignItems: 'flex-start',
         paddingTop: theme.spacing(1),
         paddingBottom: theme.spacing(2),
+        width: 100 ,
     },
     title: {
         flexGrow: 1,

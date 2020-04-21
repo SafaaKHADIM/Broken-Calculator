@@ -3,6 +3,9 @@ import '../App.css';
 import Board from "./Board";
 import Card from "./Card";
 import Display from "./Display";
+import IconLabelButtons from "./button/IconLabelButtons"
+import AddIcon from '@material-ui/icons/Add';
+import DoneOutlineIcon from '@material-ui/icons/DoneOutline';
 
 function Calculator() {
     const [firstNumber, setfirstNumber] = useState(0);
@@ -150,10 +153,10 @@ function Calculator() {
                     </Card>
                 </Board>
             </main>
+            <main>
+            <IconLabelButtons onClick1={add} onClick2={result} onClick3={verify} startIcon={<AddIcon/>}  display="inline"></IconLabelButtons>
 
-            <button onClick={add} >+</button>
-            <button onClick={result}>=</button>
-            <button onClick={verify}>verify</button>
+            </main>
         </div>
     );
 }
